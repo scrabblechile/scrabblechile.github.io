@@ -1,35 +1,75 @@
-body {
-    background-color: #eee9dc !important;
-    color: #25251f !important;
+* {
+    box-sizing: border-box;
 }
+
+/* ================================
+   FONDO GENERAL
+================================ */
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+
+    background-color: #eee9dc !important;
+
+    color: #25251f !important;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   CONTENEDOR PRINCIPAL
+================================ */
 
 .contenedor-principal {
-    max-width: 900px !important;
-    margin: 0 auto !important;
-    padding: 30px !important;
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 30px;
+
     background-color: #faf8f1 !important;
+
     border: 1px solid #d8d1c0 !important;
     border-radius: 8px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
 }
+
+
+/* ================================
+   TÍTULO
+================================ */
 
 h1 {
+    margin: 0 0 25px 0;
+    padding: 10px;
+
     color: #263f35 !important;
-    text-align: center !important;
+
+    text-align: center;
+
     font-family: Georgia, "Times New Roman", serif !important;
+
     font-size: 42px !important;
+    font-weight: bold;
+
+    letter-spacing: -0.5px;
 }
 
-.menu-navegacion {
-    background-color: #263f35 !important;
-    padding: 10px !important;
-}
+h1::after {
+    content: "";
 
-.menu-navegacion a {
-    color: white !important;
-}
+    display: block;
 
-.contenido {
-    background-color: white !important;
-    padding: 30px !important;
-    border: 1px solid #ddd7c8 !important;
+    width: 50px;
+    height: 3px;
+
+    margin: 15px auto 0;
+
+    background-color: #c44732;
 }
