@@ -1,75 +1,55 @@
-* {
-    box-sizing: border-box;
-}
-
-/* ================================
-   FONDO GENERAL
-================================ */
-
 body {
     margin: 0;
     padding: 30px 15px;
-
     background-color: #eee9dc !important;
-
     color: #25251f !important;
-
     font-family: Arial, Helvetica, sans-serif;
-
-    line-height: 1.6;
 }
-
-
-/* ================================
-   CONTENEDOR PRINCIPAL
-================================ */
 
 .contenedor-principal {
-    width: 100%;
-    max-width: 900px;
-
-    margin: 0 auto;
-    padding: 30px;
-
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 30px !important;
     background-color: #faf8f1 !important;
-
     border: 1px solid #d8d1c0 !important;
     border-radius: 8px !important;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.12);
 }
-
-
-/* ================================
-   TÍTULO
-================================ */
 
 h1 {
-    margin: 0 0 25px 0;
-    padding: 10px;
-
+    margin: 0 0 25px 0 !important;
+    padding: 10px !important;
     color: #263f35 !important;
-
-    text-align: center;
-
+    text-align: center !important;
     font-family: Georgia, "Times New Roman", serif !important;
-
     font-size: 42px !important;
-    font-weight: bold;
-
-    letter-spacing: -0.5px;
 }
 
-h1::after {
-    content: "";
+.menu-navegacion {
+    background-color: #263f35 !important;
+    padding: 10px !important;
+    margin-bottom: 25px !important;
+    text-align: center !important;
+}
 
-    display: block;
+.menu-navegacion a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    margin: 0 10px !important;
+}
 
-    width: 50px;
-    height: 3px;
+.contenido {
+    background-color: #ffffff !important;
+    padding: 30px !important;
+    border: 1px solid #ddd7c8 !important;
+}
 
-    margin: 15px auto 0;
+.contenido a {
+    color: #a83d2c !important;
+}
 
-    background-color: #c44732;
+footer {
+    margin-top: 25px !important;
+    text-align: center !important;
+    color: #777265 !important;
 }
