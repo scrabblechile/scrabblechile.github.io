@@ -1,265 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
-/* ================================
-ESTILOS GENERALES
-================================ */
-
-{
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 body {
-margin: 0;
-padding: 30px 15px;
-background-color: #e8e1d0;
-background-image:
-radial-gradient(#d8cfbb 1px, transparent 1px);
-background-size: 18px 18px;
-color: #29261f;
-font-family: "Nunito", Arial, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+    background-color: #e8e1d0;
+    background-image: radial-gradient(#d8cfbb 1px, transparent 1px);
+    background-size: 18px 18px;
+    color: #29261f;
+    font-family: "Nunito", Arial, sans-serif;
 }
-
-/* ================================
-CONTENEDOR PRINCIPAL
-================================ */
 
 .contenedor-principal {
-max-width: 850px;
-margin: 0 auto;
-background-color: #fffdf8;
-border-radius: 18px;
-padding: 30px;
-box-shadow:
-0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fffdf8;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-
-/* ================================
-TÍTULO
-================================ */
 
 h1 {
-margin: 0 0 20px 0;
-text-align: center;
-
-color: #245c43;
-font-size: 42px;
-font-weight: 800;
-letter-spacing: -1px;
-
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #245c43;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
-
-/* ================================
-MENSAJE SUPERIOR
-================================ */
 
 marquee {
-display: block;
-
-background-color: #f4c542;
-color: #332b15;
-
-border-radius: 8px;
-border: none;
-
-padding: 10px;
-margin-bottom: 20px;
-
-font-size: 16px;
-font-weight: 800;
-
+    display: block;
+    background-color: #f4c542;
+    color: #332b15;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 800;
 }
 
-/* ================================
-MENÚ DE NAVEGACIÓN
-================================ */
-
 .menu-navegacion {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-gap: 8px;
-
-background-color: #245c43;
-
-padding: 12px;
-margin-bottom: 25px;
-
-border-radius: 10px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #245c43;
+    padding: 12px;
+    margin-bottom: 25px;
+    border-radius: 10px;
 }
 
 .menu-navegacion a {
-color: #ffffff;
-text-decoration: none;
-
-font-size: 15px;
-font-weight: 700;
-
-padding: 8px 14px;
-
-border-radius: 6px;
-
-transition:
-    background-color 0.2s ease,
-    transform 0.2s ease;
-
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .menu-navegacion a:hover {
-background-color: #347a58;
-color: #ffffff;
-transform: translateY(-2px);
+    background-color: #347a58;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
-/* ================================
-CONTENIDO
-================================ */
-
 .contenido {
-background-color: #ffffff;
-
-padding: 25px;
-
-border: 1px solid #e1ddd2;
-border-radius: 12px;
-
-font-size: 16px;
-line-height: 1.7;
-
-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #e1ddd2;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.7;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
 }
 
 .contenido p:first-child {
-color: #245c43;
-font-size: 22px;
-font-weight: 800;
+    color: #245c43;
+    font-size: 22px;
+    font-weight: 800;
 }
 
-/* ================================
-ENLACES
-================================ */
-
 .contenido a {
-color: #b33a2b;
-font-weight: 700;
-text-decoration: none;
+    color: #b33a2b;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .contenido a:hover {
-color: #245c43;
-text-decoration: underline;
+    color: #245c43;
+    text-decoration: underline;
 }
-
-/* ================================
-LÍNEA SEPARADORA
-================================ */
 
 hr {
-border: none;
-border-top: 2px solid #e6e0d3;
-margin: 25px 0;
+    border: none;
+    border-top: 2px solid #e6e0d3;
+    margin: 25px 0;
 }
 
-/* ================================
-BANNER "EN CONSTRUCCIÓN"
-================================ */
-
 .banner-construccion {
-text-align: center;
-margin: 25px 0;
+    text-align: center;
+    margin: 25px 0;
 }
 
 .banner-construccion svg {
-max-width: 100%;
-height: auto;
-
-border-radius: 8px;
-
-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
-
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
 }
-
-/* ================================
-CONTADOR
-================================ */
 
 .contador {
-display: inline-block;
-
-background-color: #245c43;
-color: #f4c542;
-
-padding: 8px 14px;
-
-border-radius: 8px;
-
-font-family: "Courier New", monospace;
-font-size: 20px;
-font-weight: bold;
-
-letter-spacing: 3px;
-
-box-shadow:
-    inset 0 0 0 2px #173d2c,
-    0 3px 6px rgba(0, 0, 0, 0.15);
-
+    display: inline-block;
+    background-color: #245c43;
+    color: #f4c542;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: inset 0 0 0 2px #173d2c, 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* ================================
-PIE DE PÁGINA
-================================ */
-
 footer {
-text-align: center;
-
-margin-top: 25px;
-
-color: #777064;
-font-size: 13px;
-
+    text-align: center;
+    margin-top: 25px;
+    color: #777064;
+    font-size: 13px;
 }
 
 footer p {
-margin: 8px 0;
+    margin: 8px 0;
 }
-
-/* ================================
-DISEÑO PARA CELULAR
-================================ */
 
 @media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
 
-body {
-    padding: 15px 10px;
-}
+    .contenedor-principal {
+        padding: 18px;
+        border-radius: 12px;
+    }
 
-.contenedor-principal {
-    padding: 18px;
-    border-radius: 12px;
-}
+    h1 {
+        font-size: 32px;
+    }
 
-h1 {
-    font-size: 32px;
-}
+    .menu-navegacion {
+        flex-direction: column;
+    }
 
-.menu-navegacion {
-    flex-direction: column;
-}
+    .menu-navegacion a {
+        width: 100%;
+        text-align: center;
+    }
 
-.menu-navegacion a {
-    width: 100%;
-    text-align: center;
-}
+    .contenido {
+        padding: 18px;
+        font-size: 15px;
+    }
 
-.contenido {
-    padding: 18px;
-    font-size: 15px;
-}
-
-.contenido p:first-child {
-    font-size: 20px;
-}
-
+    .contenido p:first-child {
+        font-size: 20px;
+    }
 }
