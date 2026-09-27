@@ -1,139 +1,281 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* ========================================
+   BASE
+   ======================================== */
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    padding: 30px 15px;
-    background-color: #e8e1d0;
-    background-image: radial-gradient(#d8cfbb 1px, transparent 1px);
-    background-size: 18px 18px;
-    color: #29261f;
-    font-family: "Nunito", Arial, sans-serif;
+    padding: 40px 20px;
+
+    background-color: #eee9dc;
+    color: #25251f;
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    line-height: 1.6;
 }
+
+
+/* ========================================
+   CONTENEDOR PRINCIPAL
+   ======================================== */
 
 .contenedor-principal {
-    max-width: 850px;
+    width: 100%;
+    max-width: 920px;
+
     margin: 0 auto;
-    background-color: #fffdf8;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    background-color: #faf8f1;
+
+    border: 1px solid #d8d1c0;
+    border-radius: 4px;
+
+    box-shadow:
+        0 15px 40px rgba(50, 45, 30, 0.12);
 }
 
+
+/* ========================================
+   CABECERA
+   ======================================== */
+
 h1 {
-    margin: 0 0 20px 0;
+    margin: 0;
+    padding: 38px 30px 28px;
+
+    color: #263f35;
+
     text-align: center;
-    color: #245c43;
-    font-size: 42px;
-    font-weight: 800;
-    letter-spacing: -1px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 44px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
 }
+
+h1::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin: 18px auto 0;
+
+    background-color: #c44732;
+}
+
+
+/* ========================================
+   MENSAJE SUPERIOR
+   ======================================== */
 
 marquee {
     display: block;
-    background-color: #f4c542;
-    color: #332b15;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 800;
+
+    margin: 0 30px 22px;
+    padding: 9px 15px;
+
+    background-color: #e6d8a8;
+    color: #403c2e;
+
+    border-left: 4px solid #c44732;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
 }
+
+
+/* ========================================
+   NAVEGACIÓN
+   ======================================== */
 
 .menu-navegacion {
     display: flex;
     justify-content: center;
     align-items: center;
+
     flex-wrap: wrap;
-    gap: 8px;
-    background-color: #245c43;
-    padding: 12px;
-    margin-bottom: 25px;
-    border-radius: 10px;
+
+    gap: 4px;
+
+    margin: 0 30px 30px;
+
+    padding: 5px;
+
+    background-color: #263f35;
+
+    border-radius: 3px;
 }
 
 .menu-navegacion a {
-    color: #ffffff;
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    color: #f8f5eb;
+
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 2px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 .menu-navegacion a:hover {
-    background-color: #347a58;
+    background-color: #426957;
     color: #ffffff;
-    transform: translateY(-2px);
 }
 
+
+/* ========================================
+   CONTENIDO
+   ======================================== */
+
 .contenido {
+    margin: 0 30px;
+
+    padding: 35px;
+
     background-color: #ffffff;
-    padding: 25px;
-    border: 1px solid #e1ddd2;
-    border-radius: 12px;
+
+    border: 1px solid #ddd7c8;
+    border-radius: 3px;
+
     font-size: 16px;
-    line-height: 1.7;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    line-height: 1.8;
 }
 
 .contenido p:first-child {
-    color: #245c43;
-    font-size: 22px;
-    font-weight: 800;
+    margin-top: 0;
+
+    color: #263f35;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 27px;
+    font-weight: 700;
 }
 
+
+/* ========================================
+   ENLACES
+   ======================================== */
+
 .contenido a {
-    color: #b33a2b;
-    font-weight: 700;
+    color: #a83d2c;
+
+    font-weight: 600;
+
     text-decoration: none;
+
+    border-bottom: 1px solid rgba(168, 61, 44, 0.35);
 }
 
 .contenido a:hover {
-    color: #245c43;
-    text-decoration: underline;
+    color: #263f35;
+
+    border-bottom-color: #263f35;
 }
+
+
+/* ========================================
+   SEPARADOR
+   ======================================== */
 
 hr {
-    border: none;
-    border-top: 2px solid #e6e0d3;
-    margin: 25px 0;
+    height: 1px;
+
+    margin: 30px 0;
+
+    border: 0;
+
+    background-color: #ded8ca;
 }
 
+
+/* ========================================
+   BANNER
+   ======================================== */
+
 .banner-construccion {
-    text-align: center;
-    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0;
 }
 
 .banner-construccion svg {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+
+    border-radius: 2px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.12);
 }
+
+
+/* ========================================
+   CONTADOR
+   ======================================== */
 
 .contador {
     display: inline-block;
-    background-color: #245c43;
-    color: #f4c542;
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-family: "Courier New", monospace;
-    font-size: 20px;
-    font-weight: bold;
+
+    padding: 8px 15px;
+
+    background-color: #d7b967;
+
+    color: #263f35;
+
+    border: 1px solid #b99d55;
+    border-radius: 2px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    font-size: 18px;
+    font-weight: 700;
+
     letter-spacing: 3px;
-    box-shadow: inset 0 0 0 2px #173d2c, 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
+
+/* ========================================
+   PIE DE PÁGINA
+   ======================================== */
+
 footer {
+    margin: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #ddd7c8;
+
+    color: #777265;
+
     text-align: center;
-    margin-top: 25px;
-    color: #777064;
+
     font-size: 13px;
 }
 
@@ -141,18 +283,148 @@ footer p {
     margin: 8px 0;
 }
 
-@media (max-width: 600px) {
+
+/* ========================================
+   ELEMENTOS DE TORNEOS
+   ======================================== */
+
+/*
+   Estas clases quedan preparadas para
+   torneos.html y futuras páginas.
+*/
+
+.torneo,
+.tarjeta-torneo,
+.card-torneo {
+    background-color: #ffffff;
+
+    border: 1px solid #ddd7c8;
+    border-left: 4px solid #263f35;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+}
+
+.torneo h2,
+.tarjeta-torneo h2,
+.card-torneo h2 {
+    margin-top: 0;
+
+    color: #263f35;
+
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.torneo a,
+.tarjeta-torneo a,
+.card-torneo a {
+    color: #a83d2c;
+}
+
+
+/* ========================================
+   BOTONES
+   ======================================== */
+
+button,
+.boton {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background-color: #263f35;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 3px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+button:hover,
+.boton:hover {
+    background-color: #3d624f;
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 700px) {
+
     body {
         padding: 15px 10px;
     }
 
     .contenedor-principal {
-        padding: 18px;
-        border-radius: 12px;
+        border-radius: 3px;
     }
 
     h1 {
-        font-size: 32px;
+        padding: 30px 20px 22px;
+
+        font-size: 34px;
+    }
+
+    marquee {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .menu-navegacion {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .menu-navegacion a {
+        padding: 9px 13px;
+
+        font-size: 13px;
+    }
+
+    .contenido {
+        margin: 0 15px;
+
+        padding: 22px;
+
+        font-size: 15px;
+    }
+
+    .contenido p:first-child {
+        font-size: 24px;
+    }
+
+    footer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+/* ========================================
+   MÓVILES PEQUEÑOS
+   ======================================== */
+
+@media (max-width: 450px) {
+
+    body {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 
     .menu-navegacion {
@@ -161,15 +433,11 @@ footer p {
 
     .menu-navegacion a {
         width: 100%;
+
         text-align: center;
     }
 
     .contenido {
         padding: 18px;
-        font-size: 15px;
-    }
-
-    .contenido p:first-child {
-        font-size: 20px;
     }
 }
